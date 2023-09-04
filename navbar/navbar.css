@@ -1,16 +1,13 @@
 /* Reset dei margini e dei padding */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 20;
     padding: 0;
 }
 
 /* Barra di navigazione principale */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     width: 600px;
     height: 50px;
     background-color: #131313;
@@ -36,8 +33,8 @@ body {
 }
 
 /* Link attivo nella barra di navigazione */
-.navbar a.active {
-    color: #fff;
+a[href="home.html"] {
+    color: white;
 }
 
 /* Pulsante con menu a discesa */
