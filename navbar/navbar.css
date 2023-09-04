@@ -1,8 +1,12 @@
 /* Reset dei margini e dei padding */
 body {
     font-family: Arial, sans-serif;
-    margin: 20;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Altezza minima del viewport */
 }
 
 /* Barra di navigazione principale */
@@ -30,11 +34,6 @@ body {
 
 .navbar a:hover {
     color: #cfcfcf;
-}
-
-/* Link attivo nella barra di navigazione */
-a[href="home.html"] {
-    color: white;
 }
 
 /* Pulsante con menu a discesa */
@@ -66,4 +65,22 @@ a[href="home.html"] {
     display: block;
     padding: 10px;
     text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #131313;
+    text-align: center;
+    padding: 10px 0;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
