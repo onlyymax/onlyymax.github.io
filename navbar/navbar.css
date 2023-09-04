@@ -1,60 +1,72 @@
+/* Reset dei margini e dei padding */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Barra di navigazione principale */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 50px;
     background-color: #131313;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px;
     margin: 15px auto;
-    border-radius: 20px;
-    height: 50px;
-    width: 600px;
+    padding: 2px;
 }
 
+/* Link nella barra di navigazione */
 .navbar a {
-    text-decoration: none;
-    font-size: 17.4px;
-    transition: color 0.3s;
-    color: #b6b6b6;
     padding: 5px 14px;
+    font-size: 17.4px;
+    color: #b6b6b6;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
     color: #cfcfcf;
 }
 
+/* Link attivo nella barra di navigazione */
 .navbar a.active {
     color: #fff;
 }
 
+/* Pulsante con menu a discesa */
 .navbar-button {
     position: relative;
 }
 
+/* Menu a discesa */
 .dropdown {
     position: absolute;
     display: none;
-    background-color: #131313;
     width: 120px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #131313;
     padding: 5px 5px;
     text-align: center;
     border-radius: 0 0 8px 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25px;
 }
 
+/* Mostra il menu a discesa quando si passa sopra al pulsante */
 .navbar-button:hover .dropdown {
     display: block;
 }
 
+/* Elemento del menu a discesa */
 .dropdown-item {
+    display: block;
     padding: 10px;
     text-decoration: none;
-    display: block;
 }
