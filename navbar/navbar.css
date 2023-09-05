@@ -1,39 +1,44 @@
-/* Reset dei margini e dei padding */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* Altezza minima del viewport */
 }
 
 /* Barra di navigazione principale */
 .navbar {
     position: relative;
-    width: 600px;
-    height: 50px;
+    width: 800px;
+    height: 56px;
     background-color: #131313;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px auto;
-    padding: 2px;
+    padding: 0;
 }
 
 /* Link nella barra di navigazione */
 .navbar a {
-    padding: 5px 14px;
-    font-size: 17.4px;
+    padding: 10px 20px;
+    font-size: 17px;
     color: #b6b6b6;
     text-decoration: none;
     transition: color 0.3s;
 }
 
+/* L'hover dei tasti*/
 .navbar a:hover {
-    color: #cfcfcf;
+    color: #e4e4e4;
+}
+
+/* L'immagine di archisoft*/
+.navbar img {
+    position: absolute;
+    width: 145px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Pulsante con menu a discesa */
@@ -68,13 +73,13 @@ body {
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 250px;
     background-color: #131313;
     text-align: center;
     padding: 10px 0;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
 }
 
 .footer p {
@@ -83,4 +88,36 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.social-container {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 150px;
+    left: 1245px;
+}
+
+.social-container img {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-container img:hover {
+    transform: scale(1.2);
+}
+
+.footer hr {
+    position: absolute;
+    margin-top: 140px;
+    width: 50%;
+    left: 25%;
+    color: #c7c7c7;
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 20.48 20.48"
+   fill="none"
+   version="1.1"
+   id="svg547"
+   sodipodi:docname="telegram.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:export-filename="telegram.png"
+   inkscape:export-xdpi="61.439999"
+   inkscape:export-ydpi="61.439999"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview549"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.64"
+     inkscape:cx="140.625"
+     inkscape:cy="237.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs545">
+    <linearGradient
+       id="paint0_linear_87_7225"
+       x1="16"
+       y1="2"
+       x2="16"
+       y2="30"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#37BBFE"
+         id="stop540" />
+      <stop
+         offset="1"
+         stop-color="#007DBB"
+         id="stop542" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     transform="matrix(1.1428571,0,0,1.1428571,-2.2857136,-2.2857136)">
+    <circle
+       cx="10.96"
+       cy="10.96"
+       fill="url(#paint0_linear_87_7225)"
+       id="circle536"
+       style="display:inline;fill:#26a4e3;fill-opacity:1;stroke-width:0.64"
+       r="8.96" />
+    <path
+       d="M 16.071417,7.2536343 C 16.151161,6.7381273 15.661049,6.3312345 15.202681,6.5324825 L 6.0734781,10.540674 c -0.3286976,0.14432 -0.3046528,0.64224 0.036256,0.750784 l 1.882643,0.599552 c 0.35936,0.114432 0.748416,0.05523 1.062208,-0.161536 L 13.299193,8.7969943 c 0.128,-0.088448 0.26752,0.093568 0.158144,0.206272 l -3.05536,3.1500797 c -0.296384,0.3056 -0.237568,0.823424 0.118976,1.046976 l 3.4208,2.145152 c 0.38368,0.240576 0.877248,-0.0011 0.948992,-0.464768 z"
+       fill="#ffffff"
+       id="path538"
+       style="display:inline;stroke-width:0.64" />
+  </g>
+</svg>
