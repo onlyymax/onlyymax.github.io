@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1308"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="ArchiSquare_Bianco.svg"
+   inkscape:export-filename="ArchiSquare_white.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1310"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5385886"
+     inkscape:cx="29.707276"
+     inkscape:cy="311.92639"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1308" />
+  <defs
+     id="defs1305">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter19735"
+       x="-0.048269104"
+       y="-0.048269104"
+       width="1.1196681"
+       height="1.1196681">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood19725" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite19727" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.2"
+         result="blur"
+         id="feGaussianBlur19729" />
+      <feOffset
+         dx="2.64798"
+         dy="2.64798"
+         result="offset"
+         id="feOffset19731" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite19733" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Square"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.84824346,0,0,0.84824346,13.572726,-7.6422892)"
+     style="stroke:#ffffff;stroke-opacity:1;filter:url(#filter19735)">
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5.292;stroke-dasharray:none;stroke-opacity:1"
+       d="m 91.462343,30.958455 c -6.180411,28.548751 -7.361074,67.470321 0,111.962285"
+       id="path9161-0-7"
+       inkscape:label="RigaCentrale"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5.292;stroke-dasharray:none;stroke-opacity:1"
+       d="m 118.47318,63.334544 c -30.428997,5.992386 -70.188797,7.089227 -111.9622722,0"
+       id="path9161-0-9-3"
+       inkscape:label="RigaCentrale"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5.292;stroke-dasharray:none;stroke-opacity:1"
+       d="m 118.47318,113.40492 c -30.428994,-5.99237 -70.188794,-7.08921 -111.9622703,0"
+       id="path9161-0-7-2"
+       inkscape:label="RigaCentrale"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5.292;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.771031,32.069807 c 6.202725,27.27391 7.517459,63.765308 0,111.962273"
+       id="path9161-0-9-3-5"
+       inkscape:label="RigaCentrale"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5.292;stroke-dasharray:none;stroke-opacity:1"
+       id="rect234-0"
+       width="114.48317"
+       height="114.48317"
+       x="5.2847309"
+       y="30.295258"
+       rx="30.576008"
+       inkscape:label="Quadrato" />
+  </g>
+</svg>
