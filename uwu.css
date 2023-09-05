@@ -1,24 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset dei margini e del padding per tutti gli elementi */
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Barra di navigazione principale */
+/* Applica il font e la dimensione del testo al body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Stili per la barra di navigazione principale */
 .navbar {
-    position: relative;
-    width: 800px;
+    width: 100%;
     height: 56px;
     background-color: #131313;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    margin: 15px 0;
     padding: 0;
+    position: relative;
 }
 
-/* Link nella barra di navigazione */
+/* Stili per i link nella barra di navigazione */
 .navbar a {
     padding: 10px 20px;
     font-size: 17px;
@@ -27,12 +32,11 @@ body {
     transition: color 0.3s;
 }
 
-/* L'hover dei tasti*/
 .navbar a:hover {
     color: #e4e4e4;
 }
 
-/* L'immagine di archisoft*/
+/* Stili per l'immagine di Archisoft */
 .navbar img {
     position: absolute;
     width: 145px;
@@ -41,12 +45,12 @@ body {
     transform: translateY(-50%);
 }
 
-/* Pulsante con menu a discesa */
+/* Stili per il pulsante con menu a discesa */
 .navbar-button {
     position: relative;
 }
 
-/* Menu a discesa */
+/* Stili per il menu a discesa */
 .dropdown {
     position: absolute;
     display: none;
@@ -60,18 +64,18 @@ body {
     border-radius: 0 0 8px 8px;
 }
 
-/* Mostra il menu a discesa quando si passa sopra al pulsante */
 .navbar-button:hover .dropdown {
     display: block;
 }
 
-/* Elemento del menu a discesa */
+/* Stili per gli elementi del menu a discesa */
 .dropdown-item {
     padding: 10px;
     text-decoration: none;
     display: block;
 }
 
+/* Stili per il footer */
 .footer {
     width: 100%;
     min-height: 250px;
@@ -85,38 +89,41 @@ body {
 .footer p {
     color: #ffffff;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
 }
 
+/* Stili per il contenitore dei social media */
 .social-container {
     position: absolute;
-    width: 205px;
+    width: 180px;
     display: flex;
     justify-content: center;
     background-color: #282828;
     border-radius: 10px;
-    padding: 7px;
-    top: 160px;
-    left: 1225px;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .social-container img {
-    width: 44px;
+    width: 40px;
+    height: 40px;
     margin: 0 4px;
     border-radius: 50%;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .social-container img:hover {
     transform: scale(1.2);
 }
 
+/* Stili per la linea orizzontale nel footer */
 .footer hr {
     position: absolute;
-    margin-top: 140px;
     width: 50%;
     left: 25%;
+    bottom: 40px;
     color: #c7c7c7;
 }
