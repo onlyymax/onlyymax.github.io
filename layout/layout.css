@@ -92,6 +92,15 @@ body {
     right: 0;
 }
 
+.footer hr {
+    position: absolute;
+    bottom: 50%;
+    width: 940px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #c7c7c7;
+}
+
 /* Contenitore delle icone social nella footer */
 .social-container {
     position: absolute;
@@ -101,8 +110,8 @@ body {
     background-color: #282828;
     border-radius: 10px;
     padding: 7px;
-    bottom: 40px;
-    left: 64%;
+    bottom: 70px;
+    left: 63.3%;
 }
 
 .social-container img {
@@ -114,12 +123,4 @@ body {
 
 .social-container img:hover {
     transform: scale(1.2);
-}
-
-.footer hr {
-    position: absolute;
-    margin-top: 140px;
-    width: 50%;
-    left: 25%;
-    color: #c7c7c7;
 }
