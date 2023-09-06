@@ -2,7 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    padding-top: 76px;
+}
+
+.body-with-navbar {
+    position: relative;
+    margin-top: 1000px;
+    /* Regola questa altezza in base all'altezza effettiva della tua navbar */
 }
 
 .navbar {
@@ -16,7 +22,7 @@ body {
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
-    margin: 15px auto;
+    margin: -60px auto;
     padding: 0;
 }
 
