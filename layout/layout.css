@@ -73,7 +73,7 @@ body {
 }
 
 /* Il footer */
-.footer {
+footer {
     width: 100%;
     min-height: 250px;
     background-color: #131313;
@@ -81,18 +81,22 @@ body {
     padding: 10px 0;
     position: absolute;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* Il paragrafo "Copyright" */
-.footer p {
+footer p {
     color: #ffffff;
     position: absolute;
+    left: 50%;
     bottom: 0;
-    left: 0;
-    right: 0;
+    transform: translateX(-50%);
 }
 
-.footer hr {
+/* Il separatore nel footer*/
+footer hr {
     position: absolute;
     bottom: 50%;
     width: 940px;
@@ -101,9 +105,9 @@ body {
     color: #c7c7c7;
 }
 
-/* Contenitore delle icone social nella footer */
+/* Contenitore delle icone social nel footer */
 .social-container {
-    position: absolute;
+    position: fixed;
     width: 205px;
     display: flex;
     justify-content: center;
@@ -111,11 +115,14 @@ body {
     border-radius: 10px;
     padding: 7px;
     bottom: 70px;
-    left: 63.3%;
+    right: 487px;
+    /* Imposta il valore desiderato per spostare a sinistra */
 }
+
 
 .social-container img {
     width: 44px;
+    height: 44px;
     margin: 0 4px;
     border-radius: 50%;
     transition: transform 0.3s;
