@@ -50,7 +50,7 @@ body {
 .dropdown {
     position: absolute;
     display: none;
-    width: 120px;
+    width: 125px;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -72,8 +72,8 @@ body {
     display: block;
 }
 
+/* Il footer */
 .footer {
-
     width: 100%;
     min-height: 250px;
     background-color: #131313;
@@ -83,6 +83,7 @@ body {
     bottom: 0;
 }
 
+/* Il paragrafo "Copyright" */
 .footer p {
     color: #ffffff;
     position: absolute;
@@ -91,6 +92,7 @@ body {
     right: 0;
 }
 
+/* Contenitore delle icone social nella footer */
 .social-container {
     position: absolute;
     width: 205px;
