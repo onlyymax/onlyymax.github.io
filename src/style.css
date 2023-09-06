@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: aliceblue;
 }
 
-/* Barra di navigazione principale */
 .navbar {
-    position: relative;
+    position: fixed;
     width: 800px;
     height: 56px;
     background-color: #131313;
@@ -14,11 +14,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 15px auto;
     padding: 0;
 }
 
-/* Link nella barra di navigazione */
 .navbar a {
     padding: 10px 20px;
     font-size: 17px;
@@ -27,12 +28,10 @@ body {
     transition: color 0.3s;
 }
 
-/* L'hover dei tasti*/
 .navbar a:hover {
     color: #e4e4e4;
 }
 
-/* L'immagine di archisoft*/
 .navbar img {
     position: absolute;
     width: 145px;
@@ -41,12 +40,10 @@ body {
     transform: translateY(-50%);
 }
 
-/* Pulsante con menu a discesa */
 .navbar-button {
     position: relative;
 }
 
-/* Menu a discesa */
 .dropdown {
     position: absolute;
     display: none;
@@ -60,33 +57,26 @@ body {
     border-radius: 0 0 8px 8px;
 }
 
-/* Mostra il menu a discesa quando si passa sopra al pulsante */
 .navbar-button:hover .dropdown {
     display: block;
 }
 
-/* Elemento del menu a discesa */
 .dropdown-item {
     padding: 10px;
     text-decoration: none;
     display: block;
 }
 
-/* Il footer */
 footer {
     width: 100%;
     min-height: 250px;
     background-color: #131313;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    position: relative;
+    /* Cambiato da 'fixed' a 'relative' */
 }
 
-/* Il paragrafo "Copyright" */
 footer p {
     color: #ffffff;
     position: absolute;
@@ -95,7 +85,6 @@ footer p {
     transform: translateX(-50%);
 }
 
-/* Il separatore nel footer*/
 footer hr {
     position: absolute;
     bottom: 50%;
@@ -105,9 +94,8 @@ footer hr {
     color: #c7c7c7;
 }
 
-/* Contenitore delle icone social nel footer */
 .social-container {
-    position: fixed;
+    position: absolute;
     width: 205px;
     display: flex;
     justify-content: center;
@@ -116,9 +104,7 @@ footer hr {
     padding: 7px;
     bottom: 70px;
     right: 487px;
-    /* Imposta il valore desiderato per spostare a sinistra */
 }
-
 
 .social-container img {
     width: 44px;
