@@ -83,6 +83,5 @@ body {
 /* Stile degli elementi del dropdown */
 .dropdown-item {
     padding: 10px;
-    text-decoration: none;
     display: block;
 }
