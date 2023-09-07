@@ -8,7 +8,6 @@ body {
 .body-with-navbar {
     position: relative;
     margin-top: 1000px;
-    /* Regola questa altezza in base all'altezza effettiva della tua navbar */
 }
 
 .navbar {
@@ -61,12 +60,27 @@ body {
     padding: 5px 5px;
     text-align: center;
     border-radius: 0 0 8px 8px;
+
 }
 
+/* Animazione di comparsa del dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Applica l'animazione quando il dropdown è in mostra */
 .navbar-button:hover .dropdown {
     display: block;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Stile degli elementi del dropdown */
 .dropdown-item {
     padding: 10px;
     text-decoration: none;
