@@ -26,7 +26,7 @@ body {
 }
 
 .navbar a {
-    padding: 10px 20px;
+    padding: 14px 20px;
     font-size: 17px;
     color: #b6b6b6;
     text-decoration: none;
@@ -51,33 +51,26 @@ body {
 
 .dropdown {
     position: absolute;
-    display: none;
     width: 125px;
-    top: 100%;
+    top: 170%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #131313;
     padding: 5px 5px;
     text-align: center;
     border-radius: 0 0 8px 8px;
-
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 0%;
 }
 
-/* Animazione di comparsa del dropdown */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 /* Applica l'animazione quando il dropdown è in mostra */
 .navbar-button:hover .dropdown {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
+    visibility: visible;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 100%;
 }
 
 /* Stile degli elementi del dropdown */
