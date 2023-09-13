@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Reindirizza /index.html a /
-RewriteRule ^index\.html$ / [L,R=301]
-
-# Reindirizza /home a /index.html
-RewriteRule ^home$ /index.html [L,R=301]
-    
