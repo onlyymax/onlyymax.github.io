@@ -9,7 +9,7 @@ footer {
 }
 
 footer p {
-    color: #ffffff;
+    color: #e4e4e4;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -22,7 +22,8 @@ footer hr {
     width: 940px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #c7c7c7;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
 }
 
 .social-container {

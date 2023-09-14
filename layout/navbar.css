@@ -5,11 +5,6 @@ body {
     padding-top: 76px;
 }
 
-.body-with-navbar {
-    position: relative;
-    margin-top: 1000px;
-}
-
 .navbar {
     position: fixed;
     width: 800px;
@@ -21,8 +16,8 @@ body {
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
-    margin: -60px auto;
-    padding: 0;
+    top: 15px;
+    transition: top 0.3s;
 }
 
 .navbar a {
