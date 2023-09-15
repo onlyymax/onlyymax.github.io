@@ -1,16 +1,13 @@
 const fetchAndInject = async (url, elementId) => {
     try {
         const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
-        }
+        if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+
         const data = await response.text();
         const element = document.getElementById(elementId);
-        if (element) {
-            element.innerHTML = data;
-        } else {
-            throw new Error(`Element with ID '${elementId}' not found`);
-        }
+        if (!element) throw new Error(`Element with ID '${elementId}' not found`);
+
+        element.innerHTML = data;
     } catch (error) {
         console.error(error);
     }
@@ -21,18 +18,14 @@ const loadContent = async () => {
     await fetchAndInject('/layout/navbar.html', 'navbar-placeholder');
 };
 
-window.addEventListener('DOMContentLoaded', loadContent);
+const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const navbar = document.querySelector('.navbar');
+    if (navbar) navbar.style.top = (prevScrollPos > currentScrollPos) ? "15px" : "-60px";
+    prevScrollPos = currentScrollPos;
+};
 
-var prevScrollpos = window.pageYOffset;
-window.addEventListener('scroll', function () {
-    var currentScrollPos = window.pageYOffset;
-    var navbar = document.querySelector('.navbar');
-    if (navbar) {
-        if (prevScrollpos > currentScrollPos) {
-            navbar.style.top = "15px";
-        } else {
-            navbar.style.top = "-60px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-});
+let prevScrollPos = window.scrollY;
+window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('DOMContentLoaded', loadContent);
