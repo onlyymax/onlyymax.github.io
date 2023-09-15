@@ -33,7 +33,7 @@ body {
 }
 
 .navbar a.active {
-    color: #e4e4e4;
+    color: red;
 }
 
 .navbar img {
