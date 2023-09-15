@@ -32,6 +32,10 @@ body {
     color: #e4e4e4;
 }
 
+.navbar a.active {
+    color: #e4e4e4;
+}
+
 .navbar img {
     position: absolute;
     width: 145px;
@@ -60,7 +64,6 @@ body {
 }
 
 
-/* Applica l'animazione quando il dropdown è in mostra */
 .navbar-button:hover .dropdown {
     visibility: visible;
     transition-property: opacity;
@@ -68,7 +71,6 @@ body {
     opacity: 100%;
 }
 
-/* Stile degli elementi del dropdown */
 .dropdown-item {
     padding: 10px;
     display: block;

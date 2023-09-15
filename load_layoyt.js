@@ -16,6 +16,15 @@ const fetchAndInject = async (url, elementId) => {
 const loadContent = async () => {
     await fetchAndInject('/layout/footer.html', 'footer-placeholder');
     await fetchAndInject('/layout/navbar.html', 'navbar-placeholder');
+
+    const currentPath = window.location.pathname;
+    const navbarLinks = document.querySelectorAll(".navbar a");
+
+    navbarLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
 };
 
 const handleScroll = () => {
