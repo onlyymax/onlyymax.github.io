@@ -17,11 +17,16 @@ const loadContent = async () => {
 const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const navbar = document.querySelector('.navbar');
-    navbar.style.top = (prevScrollPos > currentScrollPos) ? "15px" : "-60px";
+
+    const halfPageHeight = window.innerHeight / 2;
+
+    navbar.style.top = (currentScrollPos > halfPageHeight) ? "-60px" : "15px";
+
     prevScrollPos = currentScrollPos;
 };
 
 let prevScrollPos = window.scrollY;
+
 window.addEventListener('scroll', handleScroll);
 
 window.addEventListener('DOMContentLoaded', loadContent);

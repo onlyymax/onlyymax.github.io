@@ -75,3 +75,19 @@ body {
     padding: 10px;
     display: block;
 }
+
+::selection {
+    background-color: #13131363;
+}
+
+::-moz-selection {
+    background-color: #13131363;
+}
+
+::-o-selection {
+    background-color: #13131363;
+}
+
+::-webkit-selection {
+    background-color: #13131363;
+}
