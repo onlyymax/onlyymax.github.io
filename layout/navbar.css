@@ -77,17 +77,17 @@ body {
 }
 
 ::selection {
-    background-color: #13131363;
+    background-color: #00000042;
 }
 
 ::-moz-selection {
-    background-color: #13131363;
+    background-color: #00000042;
 }
 
 ::-o-selection {
-    background-color: #13131363;
+    background-color: #00000042;
 }
 
 ::-webkit-selection {
-    background-color: #13131363;
+    background-color: #00000042;
 }
