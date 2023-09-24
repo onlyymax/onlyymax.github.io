@@ -5,7 +5,7 @@ body {
     padding-top: 76px;
 }
 
-.navbar {
+nav {
     position: fixed;
     width: 800px;
     height: 56px;
@@ -20,7 +20,7 @@ body {
     transition: top 0.3s;
 }
 
-.navbar a {
+nav a {
     padding: 14px 20px;
     font-size: 17px;
     color: #b6b6b6;
@@ -28,15 +28,15 @@ body {
     transition: color 0.3s;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: #e4e4e4;
 }
 
-.navbar a.active {
+nav a.active {
     color: red;
 }
 
-.navbar img {
+nav img {
     position: absolute;
     width: 145px;
     left: 10px;
