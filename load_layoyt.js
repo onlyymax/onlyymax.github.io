@@ -16,7 +16,7 @@ const loadContent = async () => {
 
 const handleScroll = () => {
     const currentScrollPos = window.scrollY;
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('nav');
 
     const halfPageHeight = window.innerHeight / 2;
 
