@@ -1,32 +1,23 @@
-const fetchAndInject = async (url, elementId) => {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+$(document).ready(function () {
+    // Carica la navbar.html nel tuo elemento con id "navbar"
+    $('#navbar').load('layout/navbar.html');
 
-    const data = await response.text();
-    const element = document.getElementById(elementId);
-    if (!element) throw new Error(`Element with ID '${elementId}' not found`);
-
-    element.innerHTML = data;
-};
-
-const loadContent = async () => {
-    await fetchAndInject('/layout/footer.html', 'footer-placeholder');
-    await fetchAndInject('/layout/navbar.html', 'navbar-placeholder');
-};
+    // Carica il footer.html nel tuo elemento con id "footer"
+    $('#footer').load('layout/footer.html');
+});
 
 const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const navbar = document.querySelector('nav');
-
     const halfPageHeight = window.innerHeight / 2;
 
-    navbar.style.top = (currentScrollPos > halfPageHeight) ? "-60px" : "15px";
-
-    prevScrollPos = currentScrollPos;
+    if (currentScrollPos > halfPageHeight) {
+        navbar.style.top = "-60px";
+    } else {
+        navbar.style.top = "15px";
+    }
 };
 
 let prevScrollPos = window.scrollY;
 
 window.addEventListener('scroll', handleScroll);
-
-window.addEventListener('DOMContentLoaded', loadContent);
