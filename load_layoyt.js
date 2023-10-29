@@ -1,10 +1,9 @@
 $(document).ready(function () {
-    // Carica la navbar.html nel tuo elemento con id "navbar"
-    $('#navbar').load('layout/navbar.html');
+    $('#navbar').load('/layout/navbar.html');
 
-    // Carica il footer.html nel tuo elemento con id "footer"
-    $('#footer').load('layout/footer.html');
+    $('#footer').load('/layout/footer.html');
 });
+
 
 const handleScroll = () => {
     const currentScrollPos = window.scrollY;
